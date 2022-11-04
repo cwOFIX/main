@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<title>Calculato</title>
+    	<script> 
+function sum(){     
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        alert(Number(a.value) + Number(b.value));
+    }
+    function minus(){
+    	var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        alert(Number(a.value) - Number(b.value));
+    }
+      function multi(){
+    	var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        alert(Number(a.value) * Number(b.value));
+     }
+     function div(){
+    	var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        alert(Number(a.value) / Number(b.value));
+     }
+
+    	</script>
+    </head>
+    <body>
+     	<h3> Calculator: </h3>
+     	<input type="text" value="" name="a" id="a"> <br><br>
+     	<input type="text" value="" name="b" id="b"><br>
+     	<input type="button" onClick="sum()" value="+" name="add">
+     	<input type="button" onClick="minus()" value="-" name="minus">
+    	<input type="button" onClick="multi()" value="*" name="multi">
+    	<input type="button" onClick="div()" value="/" name="div">
+    </body>
+    </html>
